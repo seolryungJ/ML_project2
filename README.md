@@ -84,6 +84,7 @@
 
 ## 대시보드 구현 
 - 매출액 모니터링 대시보드 구현
+  - 링크 : https://public.tableau.com/app/profile/seolryung.jung/viz/olist2_16927881594740/olist
 <img width="900" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/060055f7-ea52-4e8f-bfea-bb95055523a5">
 
 - 매출 예측 결과 15분 간격 업데이트 구현 
