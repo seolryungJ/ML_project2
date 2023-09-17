@@ -1,17 +1,21 @@
-![image](https://github.com/seolryungJ/ML_project2/assets/131641261/96b49d68-af5b-4e3e-8f25-fd32abda0e91)# ML_project2
-Olist 이커머스 기업 리뷰를 통한 매출 예측 및 자동화 대시보드 구축
-
-
-# Olist 이커머스 기업 리뷰를 통한 매출 예측 및 자동화 대시보드 구축
+![image](https://github.com/seolryungJ/ML_project2/assets/131641261/48783b0e-837a-4881-81aa-a8c0daba8ecc)# Olist 이커머스 기업 리뷰를 통한 매출 예측 및 자동화 대시보드 구축
       - 파이 팀 프로젝트
       - 진행기간 : '23.08.10 ~ '23.09.07
       - 팀원명 : 김나영, 박성호, 이민수, 정설령, 정원근
 
 ## 목차
+[소개](#소개)  
+[프로젝트 배경](#프로젝트-배경)  
+[데이터](#데이터)  
+[EDA](#EDA)  
+[데이터 전처리](#데이터-전처리)  
+[매출 예측 모델링](#매출-예측-모델링)  
+[대시보드 구현 ](#대시보드-구현)  
+[결과](#결과) 
 
 ## 소개
 - 주제 : Olist 이커머스 기업 리뷰를 통한 매출 예측 및 자동화 대시보드 구축
-- 목표 : 매출 예측과 실시간 대시보드 모니터링을 통한 최적의 마케팅 전략도 
+- 목표 : 매출 예측과 실시간 대시보드 모니터링을 통한 최적의 마케팅 전략도출 
 
 ## 프로젝트 배경
 - 배경
@@ -21,8 +25,9 @@ Olist 이커머스 기업 리뷰를 통한 매출 예측 및 자동화 대시보
 
 ## 데이터
 - 데이터 소개
-  - 데이터 출처 : [캐글]([https://dacon.io/competitions/official/236118/data](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce))
-  - 9가지 데이터셋 ![image](https://github.com/seolryungJ/ML_project2/assets/131641261/caa7d42c-b1b7-4cdc-8e70-a130d3d89e42)
+  - 데이터 출처 : [캐글]([https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce])  
+    <img width="450" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/caa7d42c-b1b7-4cdc-8e70-a130d3d89e42">
+  - 9가지 데이터셋 
     - customer_dataset
     - orders_dataset
     - order_items_dataset
@@ -35,20 +40,30 @@ Olist 이커머스 기업 리뷰를 통한 매출 예측 및 자동화 대시보
 
 ## EDA
 1. 기간, 상품
-    - 2017~2018년 월별 매출 증감 ![image](https://github.com/seolryungJ/ML_project2/assets/131641261/01dd8e3a-1995-443b-9327-211690cbb898)
-    - 2017~2018년 분기별 매출 증감 ![image](https://github.com/seolryungJ/ML_project2/assets/131641261/33e18117-a72f-4fd3-8c02-e44eed4f383d)
-    - 상품별 분석 <img width="563" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/eaf94496-d919-4c42-b269-e201b33e0c50">
+    - 2017~2018년 월별 매출 증감  
+      <img width="450" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/01dd8e3a-1995-443b-9327-211690cbb898">
+    - 2017~2018년 분기별 매출 증감  
+      <img width="450" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/33e18117-a72f-4fd3-8c02-e44eed4f383d">
+    - 상품별 분석  
+      <img width="450" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/eaf94496-d919-4c42-b269-e201b33e0c50">
 
 2. 위치
-    - 위치별 구매 분석 <img width="977" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/0cf931db-9118-4ee3-9bf1-ca3f8c290003">
-    - 배송기간 분석 <img width="969" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/741ba729-0f56-4374-ae3b-b89e656c1675">
-    - 운송비 분석 <img width="965" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/235901be-a111-4a4c-a2a8-a846eee6e800">
-    - 배송기간에 대한 분석 <img width="500" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/b08b8cb7-7c61-46d4-99d7-745dfe41a0d6">
+    - 위치별 구매 분석  
+      <img width="900" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/0cf931db-9118-4ee3-9bf1-ca3f8c290003">
+    - 배송기간 분석  
+      <img width="900" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/741ba729-0f56-4374-ae3b-b89e656c1675">
+    - 운송비 분석  
+      <img width="900" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/235901be-a111-4a4c-a2a8-a846eee6e800">
+    - 배송기간에 대한 분석  
+      <img width="450" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/b08b8cb7-7c61-46d4-99d7-745dfe41a0d6">
 
 3. 구매자
-    - 구매자의 구매 시간 분석 ![image](https://github.com/seolryungJ/ML_project2/assets/131641261/2c21c63c-c466-4b81-b437-5a04aab92122)
-    - 결제 방법에 대한 분석 <img width="966" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/85d64893-fb09-4136-bd39-adfc0288da33">
-    - 리뷰 키워드를 통한 분석 <img width="576" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/5c50c4e7-68e9-45b8-a6ca-a827a2edca0a">
+    - 구매자의 구매 시간 분석  
+      <img width="450" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/2c21c63c-c466-4b81-b437-5a04aab92122">
+    - 결제 방법에 대한 분석  
+      <img width="900" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/85d64893-fb09-4136-bd39-adfc0288da33">
+    - 리뷰 키워드를 통한 분석  
+      <img width="450" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/5c50c4e7-68e9-45b8-a6ca-a827a2edca0a">
 
 ## 매출 예측 모델링
 1. 9가지 데이터셋 병합
@@ -63,8 +78,21 @@ Olist 이커머스 기업 리뷰를 통한 매출 예측 및 자동화 대시보
     - 모델 2(날짜 + 카테고리) : 구매일자의 년, 월, 일, 분기, 카테고리, 매출액
     - 모델 3(날짜 + 지역) : 구매일자의 년, 월, 일, 지역, 매출액 
 4. 테스트 및 평가
-    - 모델 비교
-      <img width="576" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/b7fb9f19-763b-4273-b907-d065eea2b05c">
-      ![image](https://github.com/seolryungJ/ML_project2/assets/131641261/afaae739-dcff-40bd-9257-2d30738cf10f)
+    - 모델 비교  
+      <img width="1000" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/b7fb9f19-763b-4273-b907-d065eea2b05c">  
+      <img width="350" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/afaae739-dcff-40bd-9257-2d30738cf10f">
 
 ## 대시보드 구현 
+- 매출액 모니터링 대시보드 구현
+<img width="900" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/060055f7-ea52-4e8f-bfea-bb95055523a5">
+
+- 매출 예측 결과 15분 간격 업데이트 구현 
+<img width="1000" alt="image" src="https://github.com/seolryungJ/ML_project2/assets/131641261/8ff36fd8-2ace-4aa6-97fc-0143e5e198ad">
+
+## 결과
+- 한계점
+  - 데이터 수와 품질의 한계
+  - 파라미터 설정의 어려움
+- 결론
+  - 3가지 매출 예측 모델을 이용해 마케팅 전략을 도출할 수 있음을 확인
+  - 인기 카테고리 또는 매출액이 높은 지역에 특별 혜택 및 프로모션 제공하는 등 비즈니스 전략 제안 가능 
